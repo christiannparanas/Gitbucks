@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   scroll-behavior: smooth;
+}
+
+body {
+   width: 100%;
+   background-color: #2B0059;
+}
+
+// search
+.search {
+   width: 100%;
+   height: 100vh;
+   padding-top: 25vh;
+
+   .search-container {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      place-items: center;
+
+      h1 {
+         color: #F9F9FA;
+         font-size: 80px;
+      }
+
+      .input {
+         width: 90%;
+         margin: 30px auto;
+
+         input, button {
+            color: #F9F9FA;
+            width: 100%;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            padding: 15px;
+            border-radius: 4px;
+            background-color: #2A336C;
+         }
+
+         input::placeholder {
+            color: #F9F9FA;
+         }
+
+         button {
+            margin-top: 12px;
+            background-color: #55B998;
+         }
+
+
+      }
+   }
+}
+
+// loader
+.loader {
+   display: none;
+   text-align: center;
+   padding-top: 40vh;
+
+   .lds-ripple {
+      display: inline-block;
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
+   
+    .lds-ripple div {
+      position: absolute;
+      border: 4px solid #fff;
+      opacity: 1;
+      border-radius: 50%;
+      animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+   
+    .lds-ripple div:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+   
+    @keyframes lds-ripple {
+      0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+      100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+      }
+    }
+    
+}
