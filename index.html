@@ -10,18 +10,24 @@
 <body>
    <div class="search">
       <div class="search-container">
-         <h1>Github</h1>
+         <h1>Gitbucks</h1>
          <div class="input">
-            <input type="text" id="username" placeholder="Enter github username" autocomplete="off">
-            <button onclick="getUser()">Find</button>
+            <input type="text" id="username" placeholder="Enter github username" autocomplete="off" autofocus>
+            <button onclick="getUser()">Find <i class="fas fa-search"></i></button>
          </div>
+      </div>
+   </div>
+
+   <div class="not-found">
+      <div class="not">
+         <h1>User Not Found</h1>
+         <button id="back" onclick="back()">Go back!</button>
       </div>
    </div>
 
    <div class="loader">
       <div class="lds-ripple"><div></div><div></div></div>
    </div>
-
 
 
    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
