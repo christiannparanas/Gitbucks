@@ -5,14 +5,15 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
    <script src="https://kit.fontawesome.com/d340964368.js" crossorigin="anonymous"></script>
-   <title>Github User Search</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <title>CodeProfile</title>
 </head>
 <body>
    <div class="search">
       <div class="search-container">
-         <h1>Gitbucks</h1>
+         <h1>CodeProfile</h1>
          <div class="input">
-            <input type="text" id="username" placeholder="Enter github username" autocomplete="off" autofocus>
+            <input type="text" value="christiannparanas" id="username" placeholder="Search github user" autocomplete="off" autofocus>
             <button onclick="getUser()">Find <i class="fas fa-search"></i></button>
          </div>
       </div>
@@ -35,10 +36,16 @@
             <img src="" alt="" class="img">
          </div>
          <div class="infos">
-            <h1>Name: </h1>
-            <h1 class="name"></h1>
-            <h1>Location: </h1>
-            <h1 class="loc"></h1>
+            <div class="name"></div>
+            <div class="login"></div>
+            <div class="location">
+               <img src="./img/location.png" alt="">
+               <p class="loc"></p>
+            </div>
+            <div class="joined">
+               <img src="./img/calendar.png" alt="">
+               <p class="join"></p>
+            </div>
          </div>
          <button onclick="back()">Find <i class="fas fa-search"></i></button>
       </div>

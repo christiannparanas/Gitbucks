@@ -36,7 +36,15 @@ function show(res) {
       console.log(res.data)
       document.querySelector('.img').src = res.data.avatar_url;
       document.querySelector('.name').innerHTML = res.data.name;
+      document.querySelector('.login').innerHTML = "@" + res.data.login;
       document.querySelector('.loc').innerHTML = res.data.location;
+
+      let dati = res.data.created_at;
+      let strDate = new Date(dati);
+      let det = strDate.toDateString()
+      var res = det.split(" ");
+
+      document.querySelector('.join').innerHTML = `Joined ${res[1]} ${res[2]} ${res[3]}`
       found.style.display = "block";
    }
 }

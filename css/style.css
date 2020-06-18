@@ -29,7 +29,7 @@ body {
 
 .search .search-container h1 {
   color: #F9F9FA;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .search .search-container .input {
@@ -183,49 +183,72 @@ body {
 .found .container {
   width: 90%;
   margin: auto;
-  border: 3px solid pink;
   text-align: center;
 }
 
 .found .container .img-container {
   width: 90%;
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 
 .found .container .img-container img {
-  width: 100%;
-  height: 300px;
+  width: 180px;
+  height: 180px;
   margin: auto;
-  border: 5px solid #2A336C;
+  border: 7px solid #2A336C;
+  border-radius: 50%;
 }
 
 .found .container .infos {
   width: 90%;
   margin: 20px auto 30px auto;
-  text-align: left;
+  text-align: center;
   color: #F9F9FA;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60px 1fr;
-      grid-template-columns: 60px 1fr;
 }
 
-.found .container .infos label {
+.found .container .infos .name {
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+.found .container .infos .login {
+  font-size: 20px;
+  color: #55B998;
+}
+
+.found .container .infos .location {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.found .container .infos .location img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.found .container .infos .location p {
+  padding-top: 8px;
   font-size: 15px;
 }
 
-.found .container .infos h1 {
-  margin: 4px 0;
-  font-size: 15px;
+.found .container .infos .joined {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.found .container .infos .loc {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-row: 4;
-      grid-row-start: 4;
-  padding-left: 15px;
+.found .container .infos .joined img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.found .container .infos .joined p {
+  padding-top: 12px;
 }
 
 .found .container button {
