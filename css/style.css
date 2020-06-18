@@ -251,6 +251,27 @@ body {
   padding-top: 12px;
 }
 
+.found .container .boxes {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  color: #F9F9FA;
+}
+
+.found .container .boxes .box {
+  padding: 18px 12px;
+  background-color: #2A336C;
+  border-radius: 5px;
+}
+
+.found .container .boxes .box p {
+  margin-top: 10px;
+}
+
 .found .container button {
   width: 70%;
   margin: 20px auto;

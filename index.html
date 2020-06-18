@@ -14,7 +14,7 @@
          <h1>CodeProfile</h1>
          <div class="input">
             <input type="text" value="christiannparanas" id="username" placeholder="Search github user" autocomplete="off" autofocus>
-            <button onclick="getUser()">Find <i class="fas fa-search"></i></button>
+            <button onclick="getUser()">Search <i class="fas fa-search"></i></button>
          </div>
       </div>
    </div>
@@ -47,7 +47,22 @@
                <p class="join"></p>
             </div>
          </div>
-         <button onclick="back()">Find <i class="fas fa-search"></i></button>
+         <div class="boxes">
+            <div class="box" id="repo">
+               <div class="repo-count"></div>
+               <p>Repositories</p>
+            </div>
+            <div class="box" id="follower">
+               <div class="follower-count"></div>
+               <p>Followers</p>
+            </div>
+            <div class="box" id="following">
+               <div class="following-count"></div>
+               <p>Following</p>
+            </div>
+         </div>
+
+         <button onclick="back()">Search <i class="fas fa-search"></i></button>
       </div>
    </div>
 

@@ -42,9 +42,13 @@ function show(res) {
       let dati = res.data.created_at;
       let strDate = new Date(dati);
       let det = strDate.toDateString()
-      var res = det.split(" ");
+      var aaa = det.split(" ");
+      document.querySelector('.join').innerHTML = `Joined ${aaa[1]} ${aaa[2]} ${aaa[3]}`
 
-      document.querySelector('.join').innerHTML = `Joined ${res[1]} ${res[2]} ${res[3]}`
+      document.querySelector('.repo-count').innerHTML = res.data.public_repos;
+      document.querySelector('.follower-count').innerHTML = res.data.followers;
+      document.querySelector('.following-count').innerHTML = res.data.following;
+
       found.style.display = "block";
    }
 }

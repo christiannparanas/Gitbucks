@@ -218,6 +218,25 @@ body {
          }
       }
 
+      .boxes {
+         width: 90%;
+         margin: auto;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-column-gap: 5px;
+         color: #F9F9FA;
+
+         .box {
+            padding: 18px 12px;
+            background-color: #2A336C;
+            border-radius: 5px;
+
+            p {
+               margin-top: 10px;
+            }
+         }
+      }
+
       button {
          width: 70%;
          margin: 20px auto;
@@ -238,5 +257,8 @@ body {
       button:hover {
          background-color: #3a866d;
       }
+
+
+
    }
 }
