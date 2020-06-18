@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+img {
+  pointer-events: none;
+}
+
 body {
   width: 100%;
   background-color: #2B0059;
@@ -201,7 +205,7 @@ body {
 }
 
 .found .container .infos {
-  width: 90%;
+  width: 100%;
   margin: 20px auto 30px auto;
   text-align: center;
   color: #F9F9FA;
@@ -209,11 +213,11 @@ body {
 
 .found .container .infos .name {
   margin: 5px 0;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .found .container .infos .login {
-  font-size: 20px;
+  font-size: 18px;
   color: #55B998;
 }
 
@@ -252,45 +256,39 @@ body {
 }
 
 .found .container .boxes {
-  width: 90%;
-  margin: auto;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 5px;
   color: #F9F9FA;
+  font-size: 13px;
+  padding: 5px;
 }
 
 .found .container .boxes .box {
-  padding: 18px 12px;
+  width: 100%;
+  padding: 10px;
   background-color: #2A336C;
   border-radius: 5px;
 }
 
 .found .container .boxes .box p {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
-.found .container button {
-  width: 70%;
-  margin: 20px auto;
-  font-size: 20px;
+.found .back {
+  position: absolute;
+  top: 3vh;
+  left: 5vw;
+  padding: 5px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border-radius: 3px;
+}
+
+.found .back:hover {
   background-color: #55B998;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  color: #F9F9FA;
-  border: 0;
-  outline: 0;
-  padding: 15px;
-  border-radius: 5px;
-}
-
-.found .container button i {
-  padding-left: 5px;
-}
-
-.found .container button:hover {
-  background-color: #3a866d;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,10 @@
    scroll-behavior: smooth;
 }
 
+img {
+   pointer-events: none;
+}
+
 body {
    width: 100%;
    background-color: #2B0059;
@@ -172,18 +176,18 @@ body {
       }
 
       .infos {
-         width: 90%;
+         width: 100%;
          margin: 20px auto 30px auto;
          text-align: center;
          color: #F9F9FA;
 
          .name {
             margin: 5px 0;
-            font-size: 30px;
+            font-size: 27px;
          }
 
          .login {
-            font-size: 20px;
+            font-size: 18px;
             color: #55B998;
          }
 
@@ -219,46 +223,37 @@ body {
       }
 
       .boxes {
-         width: 90%;
-         margin: auto;
+         width: 100%;
          display: grid;
          grid-template-columns: repeat(3, 1fr);
          grid-column-gap: 5px;
          color: #F9F9FA;
+         font-size: 13px;
+         padding: 5px;
 
          .box {
-            padding: 18px 12px;
+            width: 100%;
+            padding: 10px;
             background-color: #2A336C;
             border-radius: 5px;
 
             p {
-               margin-top: 10px;
+               margin-top: 15px;
             }
          }
       }
+   }
 
-      button {
-         width: 70%;
-         margin: 20px auto;
-         font-size: 20px;
-         background-color: #55B998;
-         transition: all .2s ease;
-         color: #F9F9FA;
-         border: 0;
-         outline: 0;
-         padding: 15px;
-         border-radius: 5px;
+   .back {
+      position: absolute;
+      top: 3vh;
+      left: 5vw;
+      padding: 5px;
+      transition: all .3s ease;
+      border-radius: 3px;
+   }
 
-         i {
-            padding-left: 5px;
-         }
-      }
-
-      button:hover {
-         background-color: #3a866d;
-      }
-
-
-
+   .back:hover {
+      background-color: #55B998;
    }
 }
