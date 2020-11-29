@@ -1,4 +1,4 @@
-### CodeProfile
+Codeprofile
 ```
-Github User finder
+Github user finder
 ```
